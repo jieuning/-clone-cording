@@ -945,3 +945,90 @@ export const BestItems = [
         ],
     }
 ]
+
+export const CarouselImgArr = [
+    {
+        img: 'image/carousel_1.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_2.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_3.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_4.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_5.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_6.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_7.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_8.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_9.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_10.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_11.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_12.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_13.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_14.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_15.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_16.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_17.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_18.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_19.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_20.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+    {
+        img: 'image/carousel_21.avif',
+        alt: '웰퍼니처 인기가구 세일'
+    },
+]

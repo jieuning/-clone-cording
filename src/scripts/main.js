@@ -24,8 +24,8 @@ const publicItemHtml = (item) => {
     return `
         <li class="tab_item">
             <a href="#" class="today_deal_link">
-                <div class="item_img">
-                    <img src=${item.img} alt=${item.alt}>
+                <div class="item_img scale_hidden">
+                    <img class="img_scale_transition" src=${item.img} alt=${item.alt}>
                 </div>
                 <article class="item_info">
                     <h3 class="item_title_wrap">
@@ -93,8 +93,8 @@ const specialExhibition = () => {
         specialLists.innerHTML += `
             <li class="special_exhibition_list">
                 <a href="#">
-                    <div class="special_exhibition_img_wrap">
-                        <img src=${list.img} alt=${list.alt} class="special_exhibition_img">
+                    <div class="special_exhibition_img_wrap scale_hidden">
+                        <img class="special_exhibition_img img_scale_transition" src=${list.img} alt=${list.alt}>
                     </div>
                     <div class="special_exhibition_info">
                         <p class="special_exhibition_summary">${list.summery}</p>
@@ -114,8 +114,8 @@ const todayDealItems = () => {
         dealItems.innerHTML +=`
             <li class="today_deal_item">
                 <a href="#" class="today_deal_link">
-                    <div class="item_img">
-                        <img src=${item.img} alt=${item.alt}>
+                    <div class="item_img scale_hidden">
+                        <img class="img_scale_transition" src=${item.img} alt=${item.alt}>
                     </div>
                     <article class="item_info">
                         <h3 class="item_title_wrap">
