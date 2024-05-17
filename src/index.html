@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./styles/font.css">
     <link rel="stylesheet" href="./styles/commom.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/carousel.css">
     <title>오늘의 집</title>
 </head>
 
@@ -21,49 +20,84 @@
     <!----- #header  ----->
     <header id="header">
         <!-- top menu -->
-        <section class="top_menu_container container">
-            <a href="#" class="logo" alt="logo">logo</a>
-            <div class="top_menu left">
-                <ul>
-                    <li><a href="#" class="list" alt="커뮤니티">커뮤니티</a></li>
-                    <li><a href="#" class="list" alt="쇼핑">쇼핑</a></li>
-                    <li><a href="#" class="list" alt="인테리어/생활">인테리어/생활</a></li>
-                </ul>
-            </div>
-            <div class="top_menu search">
-                <span class="icon search">
-                </span>
-                <input type="text" id="search" name="search" placeholder="통합검색" />
-            </div>
-            <div class="icon cart">
-
-            </div>
-            <div class="top_menu right">
-                <a href="#" class="login_btn">로그인</a>
-                <a href="#" class="join_btn">회원가입</a>
-            </div>
-            <div class="top_menu btn">
-                <button class="write_btn" type="button">글쓰기</button>
-                <div class="icon more"></div>
+        <section class="top_menu_container">
+            <div class="top_menu_wrap container">
+                <div class="i_logo">
+                    <a href="#" class="logo" alt="오늘의집 로고"> </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="71" height="28" fill="none" class="css-40f4ru">
+                        <path fill="#2F3438"
+                            d="M19.711 7.307h10.226c.759 0 1.374-.606 1.374-1.355s-.615-1.356-1.374-1.356h-8.852v-3.24C21.085.607 20.47 0 19.71 0c-.759 0-1.374.607-1.374 1.356v4.596c0 .749.615 1.355 1.374 1.355Z">
+                        </path>
+                        <path fill="#2F3438" fill-rule="evenodd"
+                            d="M13.804 8.877c0 4.711-2.261 7.638-5.9 7.638-3.64 0-5.901-2.927-5.901-7.638V8.54c0-4.711 2.26-7.638 5.9-7.638 3.64 0 5.9 2.927 5.9 7.638zm-5.9-5.264c-1.178 0-3.153.64-3.153 4.927v.337c0 4.287 1.975 4.927 3.152 4.927 1.178 0 3.153-.64 3.153-4.927V8.54c0-4.287-1.975-4.927-3.153-4.927Z"
+                            clip-rule="evenodd"></path>
+                        <path fill="#2F3438"
+                            d="M9.278 23.496h4.655c.76 0 1.374.607 1.374 1.356 0 .748-.615 1.355-1.374 1.355H1.873A1.365 1.365 0 0 1 .5 24.852c0-.75.615-1.356 1.374-1.356H6.53v-4.173c0-.748.615-1.355 1.374-1.355.758 0 1.374.607 1.374 1.355zm22.79-13.84H17.343c-.759 0-1.373.607-1.373 1.355 0 .75.614 1.356 1.373 1.356h14.725c.76 0 1.374-.607 1.374-1.356 0-.748-.615-1.355-1.374-1.355M21.009 24.362c.654.499 2.897 1.475 9.59-.24a1.376 1.376 0 0 1 1.675.97 1.354 1.354 0 0 1-.984 1.653c-2.745.704-5.095 1.055-7.035 1.056-2.15 0-3.797-.432-4.927-1.294-1.103-.843-1.686-2.063-1.686-3.532v-2.163c0-.748.614-1.356 1.373-1.356h9.703v-2.03h-9.703a1.365 1.365 0 0 1-1.373-1.355c0-.749.614-1.356 1.373-1.356h11.077c.759 0 1.373.607 1.373 1.356v4.741c0 .749-.614 1.356-1.373 1.356h-9.703v.807c0 .632.191 1.06.62 1.387M68.135 0a1.41 1.41 0 0 0-1.419 1.4v11.2c0 .773.636 1.4 1.42 1.4a1.41 1.41 0 0 0 1.418-1.4V1.4c0-.773-.635-1.4-1.419-1.4m-6.624 12.39a1.374 1.374 0 0 0 1.759.808 1.351 1.351 0 0 0 .823-1.737c-.045-.12-.944-2.5-3.191-4.195l3.49-3.83c.362-.398.454-.97.233-1.458a1.375 1.375 0 0 0-1.255-.804h-8.56c-.759 0-1.374.607-1.374 1.356 0 .748.615 1.355 1.374 1.355h5.477l-6.499 7.132a1.342 1.342 0 0 0 .103 1.914c.263.233.591.348.919.348.376 0 .75-.152 1.022-.45l3.224-3.538c1.706 1.19 2.437 3.054 2.454 3.1Z">
+                        </path>
+                        <path fill="#2F3438" fill-rule="evenodd"
+                            d="M67.072 17.362c0-.749.615-1.356 1.374-1.356.759 0 1.374.607 1.374 1.356v6.627c0 1.914-1.579 3.471-3.519 3.471h-6.634c-1.94 0-3.519-1.557-3.519-3.471v-6.627c0-.749.615-1.356 1.374-1.356.759 0 1.374.607 1.374 1.356v2.095h8.176zm-7.405 7.387h6.634c.425 0 .771-.34.771-.76v-1.821h-8.176v1.82c0 .42.346.761.771.761m-18.999-8.935c1.664 0 3.052-.87 3.91-2.452.678-1.252 1.037-2.982 1.037-5.004 0-2.022-.359-3.752-1.038-5.004C43.72 1.772 42.332.902 40.668.902c-1.664 0-3.052.87-3.91 2.452-.678 1.252-1.037 2.982-1.037 5.004 0 2.022.359 3.752 1.038 5.004.857 1.581 2.245 2.452 3.909 2.452m0-12.201c2.093 0 2.2 3.952 2.2 4.745 0 .792-.107 4.745-2.2 4.745-2.094 0-2.2-3.953-2.2-4.745 0-.793.106-4.745 2.2-4.745"
+                            clip-rule="evenodd"></path>
+                        <path fill="#2F3438"
+                            d="M47.746 1.81c0-.748.615-1.355 1.374-1.355.759 0 1.374.607 1.374 1.356V25.73c0 .749-.615 1.355-1.374 1.355a1.365 1.365 0 0 1-1.374-1.355v-4.514c-2.992.733-7.314.95-9.812.95h-2.091a1.365 1.365 0 0 1-1.374-1.355c0-.749.615-1.356 1.374-1.356h2.091c4.378 0 7.991-.493 9.812-1.052z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="left_inner">
+                    <ul class="list">
+                        <li><a href="#" alt="커뮤니티">커뮤니티</a></li>
+                        <li><a href="#" alt="쇼핑">쇼핑</a></li>
+                        <li><a href="#" alt="인테리어/생활">인테리어/생활</a></li>
+                    </ul>
+                </div>
+                <div class="search_inner">
+                    <span class="i_search"> </span>
+                    <input type="text" id="search" name="search" placeholder="통합검색" />
+                </div>
+                <div class="i_cart">
+                    <a href="" alt="장바구니"> </a>
+                    <svg class="cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                        <path
+                            d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                    </svg>
+                </div>
+                <div class="right_inner">
+                    <ul class="list">
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li>
+                            <button type="button" class="write_btn">글쓰기
+                                <span class="icon more"> </span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
-        <!-- main menu -->
-        <section class="main_menu_container">
-            <div class="main_menu_wrap container">
-                <div class="main_menu_inner">
-                    <nav class="main_menus"></nav>
-                    <span class="main_menu_hidden">
+        <!-- header nav -->
+        <section class="header_nav_container">
+            <div class="header_nav_wrap container">
+                <div class="header_nav_inner">
+                    <nav class="header_nav"></nav>
+                    <span class="nav_hidden">
                         <button class="hidden_menu_btn">
-                            <span>o</span>
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.3rem" height="1.3rem"
+                                    viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#2f3438" stroke-linecap="round" stroke-linejoin="round"
+                                        d="m7 10l5 5l5-5" />
+                                </svg>
+                            </span>
                         </button>
                     </span>
                 </div>
                 <div class="popular_keyword">
                     <a href="#">
-                        <span>1</span>
+                        <span class="popular_rank">1</span>
                         <span></span>
                         <span>아크릴 정리함</span>
                     </a>
+                    <button class="popular_modal_btn"></button>
                 </div>
             </div>
         </section>
@@ -111,6 +145,186 @@
                 <ul class="contents_category_lists"></ul>
             </div>
         </section>
+        <!-- photoLike contents -->
+        <section class="main_photoLike_container container">
+            <h1 class="title">
+                <div>
+                    <span class="photoLike_title">이런 사진을 찾고 있나요?</span>
+                    <p class="photoLike_sub_title">좋아하실 만한 인테리어 콘텐츠를 추천해드려요.</p>
+                </div>
+                <a class="more_btn" href="" alt="">더보기</a>
+            </h1>
+            <ul class="list_inner">
+                <li>
+                    <a href="#" class="main_photoLike link">
+                        <img src="./img/img_final/171388889642442431.jpeg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_photoLike_link">
+                        <img src="./img/img_final/171505298636754114.jpeg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_photoLike_link">
+                        <img src="./img/img_final/171505809012020597.jpeg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_photoLike_link">
+                        <img src="./img/img_final/169033971362941351.jpeg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_photoLike_link">
+                        <img src="./img/img_final/168622201621200485.jpeg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_photoLike_link">
+                        <img src="./img/img_final/v1-238767013715968.jpg" alt="" />
+                        <div class="photoLikeTxt">
+                            <div class="bottomTxt">
+                                <div class="profileImg">
+                                    <img src="./img/img_final/profile_images1550471552_8.jpeg" alt="" />
+                                </div>
+                                <span class="profileId">달쯔뮤</span>
+                            </div>
+                            <div class="i_bookmark">
+                                <svg class="bookmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 800">
+                                    <path
+                                        d="M0 48C0 21.5 21.5 0 48 0l0 48V441.4l130.1-92.9c8.3-6 19.6-6 27.9 0L336 441.4V48H48V0H336c26.5 0 48 21.5 48 48V488c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5 37.9 507.5c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!--main_house_container-->
+        <section class="main_house_container container">
+            <h1 class="title">
+                <span>따끈따끈한 새 집들이가 올라왔어요!</span>
+                <a class="more_btn" href="" alt="">더보기</a>
+            </h1>
+
+            <ul class="house_inner">
+                <li>
+                    <a href="#" class="main_house_link">
+                        <div class="main_house_img_wrap">
+                            <img src="./img/img_final/171325316532277700.jpg" alt="" />
+                        </div>
+                        <div class="house_bottomtxt">
+                            <span class="housetxt">감각적인 가구로 스타일링하기</span>
+                            <span class="housetxt">리모델링을 뛰어넘는 효과률!</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_house_link">
+                        <div class="main_house_img_wrap">
+                            <img src="./img/img_final/171289776135172011.jpg" alt="" />
+                        </div>
+                        <div class="house_bottomtxt">
+                            <span class="housetxt">심플함은 유지하고</span>
+                            <span class="housetxt">실용적인 면을 강조해 꾸민 39평!</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_house_link">
+                        <div class="main_house_img_wrap">
+                            <img src="./img/img_final/171289776135172011.jpg" alt="" />
+                        </div>
+                        <div class="house_bottomtxt">
+                            <span class="housetxt">가족들의 소중한 시간들로</span>
+                            <span class="housetxt">채워지는 세가족의 협소 주택</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="main_house_link">
+                        <div class="main_house_img_wrap">
+                            <img src="./img/img_final/171293598627778359.jpg" alt="" />
+                        </div>
+                        <div class="house_bottomtxt">
+                            <span class="housetxt">여행 덕후의 기념품으로 완성한</span>
+                            <span class="housetxt">모던 프렌치 스타일링</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section>
         <!-- category by find item -->
         <section class="finditem_category_container container">
             <h1 class="title">카테고리별 상품 찾기</h1>
@@ -127,6 +341,46 @@
                 </h1>
                 <ul class="today_deal_items_lists"></ul>
             </div>
+        </section>
+        <!--interia container-->
+        <section class="main_interia_container container">
+            <h1 class="title">
+                <span>유저들의 인테리어 시공 리뷰</span>
+                <a class="more_btn" href="" alt="">더보기</a>
+            </h1>
+
+            <ul class="interia_inner">
+                <li>
+                    <a href="#" class="main_interia_link">
+                        <img src="./img/img_final/171325316532277700.jpg" alt="" />
+                    </a>
+                    <div class="interia_bottom_txt">
+                        <span class="interia_txt">콘크리트 301</span>
+                        <span class="interia_txt">첫 집, 첫 인테리어라서 고민도 걱정도 많이 했네요. 뭔가 예쁘게 하고 싶은데 예산을 적정한 수준으로 하고 싶고..
+                            예쁜건 비싸고..>>이런 굴레를 얼마나 많이 겪었는지..</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main_interia_link">
+                        <img src="./img/img_final/171289776135172011.jpg" alt="" />
+                    </a>
+                    <div class="interia_bottom_txt">
+                        <span class="interia_txt">드림하우스</span>
+                        <span class="interia_txt">가격, 공사 완성도, 원활한 소통 모든 면에서 최상의 만족입니다.[실력까지 겸비한 친절도 ★★★★★] 베란다 확장이
+                            포함된 구식아파트 전체 인테리어라..</span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="main_interia_link">
+                        <img src="./img/img_final/171289776135172011.jpg" alt="" />
+                    </a>
+                    <div class="interia_bottom_txt">
+                        <span class="interia_txt">루멘디자인</span>
+                        <span class="interia_txt">회사 분위기가 전체적으로 따뜻하고 친절했습니다. 소통을 잘해주셔서 원하는대로 디자인 진행 할 수 있었고 문의사항이나
+                            수정사항 응대를 바로바로 해결해...</span>
+                    </div>
+                </li>
+            </ul>
         </section>
         <!-- today special exhibition -->
         <section class="special_exhibition_container container">

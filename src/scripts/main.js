@@ -51,26 +51,51 @@ const publicItemHtml = (item) => {
     `  
 };
 
-const mainMenu = () => {
-    const menuNavTag = document.querySelector(".main_menus");
+const headerNav = () => {
+    const nav = document.querySelector(".header_nav");
 
     MenuArr.forEach(menu => {
-        menuNavTag.innerHTML += `
-            <span class="main_menu">
-                <a href="#" class="main_menu_link underline">
-                    <p class="main_menu_name">        
+        nav.innerHTML += `
+            <span class="header_menu">
+                <a href="#" class="header_menu_link">
+                    <p class="header_menu_name">        
                         ${menu}
                     </p>
                 </a>
+                <span class="underline"></span>
             </span>
         `
     });
+
+    const navMenus = document.querySelectorAll(".header_menu_link");
+    const navUnderline = document.querySelector(".underline");
+    let activeMenu = navMenus[0];
+
+    // 초기값 설정
+    activeMenu.classList.add('on');
+    navUnderline.style.left = activeMenu.offsetLeft + 'px';
+    navUnderline.style.width = activeMenu.offsetWidth + 'px';
+
+    // 타겟에 underliner과 color변경
+    const targetStyle = (target) => {
+        activeMenu.classList.remove('on');
+        navUnderline.style.left = target.offsetLeft + 'px';
+        navUnderline.style.width = target.offsetWidth + 'px';
+
+        activeMenu = target;
+        activeMenu.classList.add('on');
+    }
+
+    navMenus.forEach(menu => {
+        menu.addEventListener('click', (e) => {
+            targetStyle(e.currentTarget);
+        })
+    })
 };
-mainMenu();
+headerNav();
 
 const contetntsByCategory = () => {
     const categoryLists = document.querySelector(".contents_category_lists");
-    
     CategoryListArr.forEach(list => {
         categoryLists.innerHTML += publicCategoryHtml(list);
     })
@@ -79,10 +104,9 @@ contetntsByCategory();
 
 const finditemCategory = () => {
     const finditemLists = document.querySelector(".finditem_lists");
-    
-    for(let i=1; i<FinditemArr.length; i++) {
-        finditemLists.innerHTML += publicCategoryHtml(FinditemArr[i]);
-    }
+    FinditemArr.forEach(item => {
+        finditemLists.innerHTML += publicCategoryHtml(item);
+    });
 };
 finditemCategory();
 
@@ -161,15 +185,13 @@ const bestTabMenu = () => {
         let activeTab = tabBtns[0];
 
         // 초기 탭 활성화
-        if(activeTab) {
-            activeTab.classList.add("on");
-            tabItemWrap.innerHTML = items.전체.map(item => publicItemHtml(item)).join('');
-        }
+        activeTab.classList.add("on");
+        tabItemWrap.innerHTML = items.전체.map(item => publicItemHtml(item)).join('');
 
         // 탭버튼 클릭 이벤트
         tabBtns.forEach(tabBtn => {
             tabBtn.addEventListener('click', () => {
-                if(activeTab) activeTab.classList.remove("on");
+                activeTab.classList.remove("on");
 
                 activeTab = tabBtn;
                 activeTab.classList.add("on");
@@ -184,7 +206,6 @@ bestTabMenu();
 
 const moreView = () => {
     const specialListElements = document.querySelectorAll(".special_exhibition_list");
-
     const moreViewElement = `
         <li class="more_view_list">
             <a href="#" class="more_view_link">
@@ -195,6 +216,7 @@ const moreView = () => {
             </a>
         </li>
     `
+    // 리스트 끝에 더보기 붙이기
     specialListElements[specialListElements.length -1].insertAdjacentHTML("afterend" ,moreViewElement); 
 };
 moreView();

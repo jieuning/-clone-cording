@@ -12,7 +12,6 @@ export const MenuArr = [
     '플랜테리어', 
     '반려동물', 
     '캠핑', 
-    '육아', 
     '이벤트'
 ];
 
@@ -77,9 +76,6 @@ export const CategoryListArr = [
 ]
 
 export const FinditemArr = [
-    {
-        title: '전체'
-    },
     {
         title: '여름맞이',
         alt: '여름맞이',
